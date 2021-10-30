@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crab Apple</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <!--main page and section-->
-    <section class="showcase">
+    <section class="showcase active">
         <header>
-            <h2 class="logo">Crabby</h2>
+            <h2 class="logo">Crabby Test Site</h2>
             <div class="functions">
                 <div class="toggle"></div>
                 <div class="sound" id='sound'></div>
             </div> 
         </header>
-        <video src="Assets/let's float.mov" muted loop autoplay></video>
+        <video id="video" src="Assets/let's float.mov" muted loop autoplay></video>
         <div class="overlay"></div>
 
         <div class="text">
@@ -29,8 +30,8 @@
         </div>
         
         <ul class="social">
-            <li><img src="Assets/facebook.png" alt=""></li>
-            <li><img src="Assets/instagram.png" alt=""></li>
+            <li><a href="#"><img src="Assets/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="Assets/instagram.png" alt=""></a></li>
         </ul>
     </section>
 
