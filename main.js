@@ -9,13 +9,23 @@ $(document).ready(()=>{
     }
 
     function toggleClose(){
-        let menu = document.getElementsByClassName('toggle');
-        
+        if($('.toggle').hasClass('active')){
+            $('.toggle').removeClass('active');
+            $('.showcase').removeClass('active');
+        }
+        else{
+            $('.toggle').addClass('active');
+            $('.showcase').addClass('active');
+        }
     }
 
     // Jquery that triggers buttons
     $('#sound').click(()=>{
         toggleMute();
+    })
+
+    $('.toggle').click(()=>{
+        toggleClose();
     })
 
 });
